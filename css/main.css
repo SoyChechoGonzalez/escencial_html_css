@@ -56,14 +56,24 @@ nav details summary {
 h1 {
   font-size: 60px;
 }
+hr {
+  margin: 64px 0;
+}
 h2 {
   font-size: 2em;
+  margin: 64px 0 40px;
+  font-weight: normal;
 }
 h3 {
   font-size: 1.5rem;
+  margin: 16px 0 24px;
+  font-weight: normal;
 }
 pre {
   background: #fec62e;
+}
+blockquote {
+  margin: 32px 0;
 }
 .hero {
   background-image: linear-gradient(
@@ -74,9 +84,25 @@ pre {
     url("../assets/img/pattern.png");
   height: 350px;
 }
+.section-content ol li {
+  line-height: 24px;
+}
+.section-content ul li {
+  margin-bottom: 16px;
+}
+.section-content + hr {
+  display: none;
+}
+.section-content img {
+  margin-top: 40px;
+}
 .section-content {
   counter-reset: titleList;
+  margin-top: 164px;
 }
+.section-content:first-of-type {
+  background: red;
+  margin: 0;
 .section-content h3 {
   counter-increment: titleList;
 }
